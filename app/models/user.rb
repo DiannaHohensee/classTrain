@@ -1,7 +1,10 @@
 class User
-      include Mongoid::Document
+  include Mongoid::Document
 
-      field :first_name,	:type => String
-      field :last_name, 	:type => String
+  has_and_belongs_to_many :courses
+
+  field :first_name, type: String
+  field :last_name,  type: String
+  field :uni, 	     type: String
 
 end

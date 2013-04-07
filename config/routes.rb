@@ -1,4 +1,19 @@
 ClassTrain::Application.routes.draw do
+  resources :uploads
+
+
+  resources :assignments
+
+
+  resources :courses
+
+
+  resources :lectures
+
+
+  resources :users
+
+
   get "home/index"
 
   # The priority is based upon order of creation:
